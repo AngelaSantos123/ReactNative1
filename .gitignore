@@ -33,3 +33,9 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+screens/AtajoDiseno/LineaSeparatoria.js
+screens/AtajoDiseno/Ayudas.js
+screens/AtajoDiseno/MenuDiseno.js
+screens/AtajoDiseno/Dialog/Dialog_Icon.js
+screens/AtajoDiseno/Dialog/Dialog_Scroll.js
+screens/AtajoDiseno/Navegaciones/Deslizar.js

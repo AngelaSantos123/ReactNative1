@@ -88,6 +88,9 @@ import EstiloBotones from "./screens/AtajoDiseno/EstiloBotones";
 import ComponenteTarjeta from "./screens/AtajoDiseno/ComponenteTarjeta";
 import ChipEjemplo from "./screens/AtajoDiseno/ChipEjemplo";
 import CheckBox from "./screens/AtajoDiseno/CheckBox";
+import LineaSeparatoria from "./screens/AtajoDiseno/LineaSeparatoria";
+import Ayudas from "./screens/AtajoDiseno/Ayudas";
+import IconoDiseno from "./screens/AtajoDiseno/IconoDiseno";
 
 import Avatar_Icono from "./screens/AtajoDiseno/Avatar/Avatar_Icono";
 import Avatar_Imagen from "./screens/AtajoDiseno/Avatar/Avatar_Imagen";
@@ -100,7 +103,14 @@ import ApbarContent from "./screens/AtajoDiseno/Navegaciones/ApbarContent";
 import ApbarHeader from "./screens/AtajoDiseno/Navegaciones/ApbarHeader";
 import NavegacionInferior from "./screens/AtajoDiseno/Navegaciones/NavegacionInferior";
 import NavegacionInferior2 from "./screens/AtajoDiseno/Navegaciones/NavegacionInferior2";
+import DesplegableHorizontal from "./screens/AtajoDiseno/Navegaciones/DesplegableHorizontal";
+import Deslizar from "./screens/AtajoDiseno/Navegaciones/Deslizar";
+import DeslizarBotones from "./screens/AtajoDiseno/Navegaciones/DeslizarBotones";
 
+import Dialog_Icon from "./screens/AtajoDiseno/Dialog/Dialog_Icon";
+import Dialog_Scroll from "./screens/AtajoDiseno/Dialog/Dialog_Scroll";
+
+// ARTURO
 import { Provider as PaperProvider } from 'react-native-paper';
 import TablaPaginacion from "./screens/Arturo/TablaPaginacion";
 import Ejemplo2 from "./screens/Arturo/Ejemplo2";
@@ -109,10 +119,7 @@ import P1_Arturo from "./screens/Arturo/P1_Arturo";
 import P2_Arturo from "./screens/Arturo/P2_Arturo";
 import P3_Arturo from "./screens/Arturo/P3_Arturo";
 import Efectos from "./screens/Arturo/Efectos";
-// import Ejemplo2 from "./screens/Arturo/Ejemplo2";
-// import Ejemplo2 from "./screens/Arturo/Ejemplo2";
-// import Ejemplo2 from "./screens/Arturo/Ejemplo2";
-// import Ejemplo2 from "./screens/Arturo/Ejemplo2";
+
 // import Ejemplo2 from "./screens/Arturo/Ejemplo2";
 // import Ejemplo2 from "./screens/Arturo/Ejemplo2";
 // import Ejemplo2 from "./screens/Arturo/Ejemplo2";
@@ -241,6 +248,9 @@ const App = () => {
           <Stack.Screen name="ComponenteTarjeta" component={ComponenteTarjeta} />
           <Stack.Screen name="ChipEjemplo" component={ChipEjemplo} />
           <Stack.Screen name="CheckBox" component={CheckBox} />
+          <Stack.Screen name="LineaSeparatoria" component={LineaSeparatoria} />          
+          <Stack.Screen name="Ayudas" component={Ayudas} />
+          <Stack.Screen name="IconoDiseno" component={IconoDiseno} />
 
           <Stack.Screen name="Apbar" component={Apbar} />
           <Stack.Screen name="ApbarAction" component={ApbarAction} />
@@ -249,10 +259,16 @@ const App = () => {
           <Stack.Screen name="ApbarHeader" component={ApbarHeader} />
           <Stack.Screen name="NavegacionInferior" component={NavegacionInferior} />
           <Stack.Screen name="NavegacionInferior2" component={NavegacionInferior2} />
+          <Stack.Screen name="DesplegableHorizontal" component={DesplegableHorizontal} />
+          <Stack.Screen name="Deslizar" component={Deslizar} />
+          <Stack.Screen name="DeslizarBotones" component={DeslizarBotones} />
 
           <Stack.Screen name="Avatar_Icono" component={Avatar_Icono} />
           <Stack.Screen name="Avatar_Imagen" component={Avatar_Imagen} />
           <Stack.Screen name="Avatar_Text" component={Avatar_Text} />
+
+          <Stack.Screen name="Dialog_Icon" component={Dialog_Icon} />
+          <Stack.Screen name="Dialog_Scroll" component={Dialog_Scroll} />
 
           {/*ARTURO*/}
           <Stack.Screen name="TablaPaginacion" component={TablaPaginacion} />
@@ -261,13 +277,9 @@ const App = () => {
           <Stack.Screen name="P1_Arturo" component={P1_Arturo} />
           <Stack.Screen name="P2_Arturo" component={P2_Arturo} />          
           <Stack.Screen name="P3_Arturo" component={P3_Arturo} />
-          <Stack.Screen name="Efectos" component={Efectos} />
-          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
-          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
-          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
-          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
-          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
-          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
+          <Stack.Screen name="Efectos" component={Efectos} />                   
+          
+          
           {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
           {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}          
           {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}

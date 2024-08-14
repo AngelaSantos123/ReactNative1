@@ -14,6 +14,9 @@ const MenuAppBar = () => {
     { text: 'Header', screen: 'ApbarHeader' },
     { text: 'Navegacion Inferior', screen: 'NavegacionInferior' },
     { text: 'Navegacion Inferior 2', screen: 'NavegacionInferior2' },
+    { text: 'DesplegableHorizontal', screen: 'DesplegableHorizontal' },
+    { text: 'Deslizar y mensaje', screen: 'Deslizar' },
+    { text: 'Desplegable de botones', screen: 'DeslizarBotones' },
   ];
 
   // Función para manejar la navegación al presionar un botón

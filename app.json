@@ -19,7 +19,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.angyrn.mynewproject"
+      "package": "com.angyrn.mynewproject", "versionCode" :1
     },
     "web": {
       "favicon": "./assets/favicon.png"
