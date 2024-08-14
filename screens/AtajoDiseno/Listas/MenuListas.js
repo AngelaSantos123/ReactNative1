@@ -7,31 +7,11 @@ const MenuDiseno = () => {
 
   // Ejemplo de datos para los botones
   const buttonsData = [
-    { text: 'Símbolo de cargar', screen: 'SimboloCargar' },
-    { text: 'Appbar', screen: 'MenuAppBar' },
-    { text: 'Menú Avatar', screen: 'MenuAvatar' },
-    { text: 'Cantidad', screen: 'Cantidad' },
-    { text: 'Mostrar Ocultar', screen: 'MostrarOcultar' },
-    { text: 'Botones', screen: 'EstiloBotones' },
-    { text: 'Componente Tarjeta', screen: 'ComponenteTarjeta' },
-    { text: 'Chip', screen: 'ChipEjemplo' },
-    { text: 'CheckBox', screen: 'CheckBox' },
-    { text: 'Navegacion Tablas', screen: 'NavegacionTablas' },
-    { text: 'Dialog', screen: 'Dialog_Scroll' },
-    { text: 'Divider', screen: 'LineaSeparatoria' },
-    { text: 'Ayudas', screen: 'Ayudas' },
-    { text: 'IconoDiseno', screen: 'IconoDiseno' },
-    { text: 'Listas', screen: 'MenuListas' },
-    { text: 'Click Derecho Opciones', screen: 'ClickDcho' },
-    { text: 'Click Derecho Clásico', screen: 'ClickDcho2' },
-    { text: 'Modales', screen: 'Modales' },
-    { text: 'BarraCarga', screen: 'BarraCarga' },
-    { text: 'Proceso', screen: 'Proceso' },
-    { text: 'Proceso', screen: 'Proceso' },
-    { text: 'Proceso', screen: 'Proceso' },
-    { text: 'Proceso', screen: 'Proceso' },
-    { text: 'Proceso', screen: 'Proceso' },
-    { text: 'Proceso', screen: 'Proceso' },
+    { text: 'Listas', screen: 'ListaAcordeon' },
+    { text: 'Listas 2', screen: 'Lista2' },
+    { text: 'ListaIcono', screen: 'ListaIcono' },
+    { text: 'ListaItem', screen: 'ListaItem' },
+    { text: 'ListaSection', screen: 'ListaSection' },
   ];
 
   // Función para manejar la navegación al presionar un botón

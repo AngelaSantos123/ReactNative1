@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { IconButton, MD3Colors } from 'react-native-paper';
 
 const Button = ({ size, shape, icon, onPress, children }) => {
   const sizeStyle = styles[`btn${size.charAt(0).toUpperCase() + size.slice(1)}`];
@@ -32,6 +33,13 @@ const Botones = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.header}>Bootstrap Styled Buttons</Text>
+
+      <IconButton
+        icon="camera" // Cambiar iconos
+        iconColor={MD3Colors.error50}
+        size={20}
+        onPress={() => console.log('Pressed')}
+      />
 
       <BootstrapButton
         title="Primary"

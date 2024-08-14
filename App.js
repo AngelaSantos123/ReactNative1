@@ -37,6 +37,7 @@ import Desplegable1 from "./screens/Curso/Desplegable1";
 import Puntos from './screens/Curso/Puntos';
 import Figuras from './screens/Curso/Figuras';
 
+// DEGRADADOS
 import MenuDegradados from './screens/Degradados/MenuDegradados';
 import D_Horizontal from './screens/Degradados/D_Horizontal';
 import D_Vertical from './screens/Degradados/D_Vertical';
@@ -68,6 +69,7 @@ import Canciones from './screens/Musica/Canciones';
 import ControlVolumen from './screens/Musica/ControlVolumen';
 import PausarPlay from './screens/Musica/PausarPlay';
 
+// GRÁFICAS
 import MyChart from './screens/Curso/MyChart';
 import MenuGraficas from "./screens/Graficas/MenuGraficas";
 import G_Barras from "./screens/Graficas/G_Barras";
@@ -81,6 +83,7 @@ import MenuAvatar from "./screens/AtajoDiseno/Avatar/MenuAvatar";
 import MenuAppBar from "./screens/AtajoDiseno/Navegaciones/MenuAppBar";
 import NavegacionTablas from "./screens/AtajoDiseno/Tablas/NavegacionTablas";
 
+// PANTALLAS ATAJODISENO PRINCIPALES
 import SimboloCargar from "./screens/AtajoDiseno/SimboloCargar";
 import Cantidad from "./screens/AtajoDiseno/Cantidad";
 import MostrarOcultar from "./screens/AtajoDiseno/MostrarOcultar";
@@ -91,11 +94,17 @@ import CheckBox from "./screens/AtajoDiseno/CheckBox";
 import LineaSeparatoria from "./screens/AtajoDiseno/LineaSeparatoria";
 import Ayudas from "./screens/AtajoDiseno/Ayudas";
 import IconoDiseno from "./screens/AtajoDiseno/IconoDiseno";
+import ClickDcho from "./screens/AtajoDiseno/ClickDcho";
+import ClickDcho2 from "./screens/AtajoDiseno/ClickDcho2";
+import Modales from "./screens/AtajoDiseno/Modales";
+import BarraCarga from "./screens/AtajoDiseno/BarraCarga";
 
+// ICONOS
 import Avatar_Icono from "./screens/AtajoDiseno/Avatar/Avatar_Icono";
 import Avatar_Imagen from "./screens/AtajoDiseno/Avatar/Avatar_Imagen";
 import Avatar_Text from "./screens/AtajoDiseno/Avatar/Avatar_Text";
 
+// BARRA DE NAVEGACIÓN
 import Apbar from "./screens/AtajoDiseno/Navegaciones/Apbar";
 import ApbarAction from "./screens/AtajoDiseno/Navegaciones/ApbarAction";
 import ApbarBack from "./screens/AtajoDiseno/Navegaciones/ApbarBack";
@@ -110,15 +119,13 @@ import DeslizarBotones from "./screens/AtajoDiseno/Navegaciones/DeslizarBotones"
 import Dialog_Icon from "./screens/AtajoDiseno/Dialog/Dialog_Icon";
 import Dialog_Scroll from "./screens/AtajoDiseno/Dialog/Dialog_Scroll";
 
-// ARTURO
-import { Provider as PaperProvider } from 'react-native-paper';
-import TablaPaginacion from "./screens/Arturo/TablaPaginacion";
-import Ejemplo2 from "./screens/Arturo/Ejemplo2";
-import MenuArturo from "./screens/Arturo/MenuArturo";
-import P1_Arturo from "./screens/Arturo/P1_Arturo";
-import P2_Arturo from "./screens/Arturo/P2_Arturo";
-import P3_Arturo from "./screens/Arturo/P3_Arturo";
-import Efectos from "./screens/Arturo/Efectos";
+// LISTAS
+import ListaAcordeon from "./screens/AtajoDiseno/Listas/ListaAcordeon";
+import Lista2 from "./screens/AtajoDiseno/Listas/Lista2";
+import ListaIcono from "./screens/AtajoDiseno/Listas/ListaIcono";
+import ListaItem from "./screens/AtajoDiseno/Listas/ListaItem";
+import ListaSection from "./screens/AtajoDiseno/Listas/ListaSection";
+import MenuListas from "./screens/AtajoDiseno/Listas/MenuListas";
 
 // import Ejemplo2 from "./screens/Arturo/Ejemplo2";
 // import Ejemplo2 from "./screens/Arturo/Ejemplo2";
@@ -130,6 +137,19 @@ import Efectos from "./screens/Arturo/Efectos";
 // import Ejemplo2 from "./screens/Arturo/Ejemplo2";
 // import Ejemplo2 from "./screens/Arturo/Ejemplo2";
 // import Ejemplo2 from "./screens/Arturo/Ejemplo2";
+// import Ejemplo2 from "./screens/Arturo/Ejemplo2";
+// import Ejemplo2 from "./screens/Arturo/Ejemplo2";
+// import Ejemplo2 from "./screens/Arturo/Ejemplo2";
+
+// ARTURO
+import { Provider as PaperProvider } from 'react-native-paper';
+import TablaPaginacion from "./screens/Arturo/TablaPaginacion";
+import Ejemplo2 from "./screens/Arturo/Ejemplo2";
+import MenuArturo from "./screens/Arturo/MenuArturo";
+import P1_Arturo from "./screens/Arturo/P1_Arturo";
+import P2_Arturo from "./screens/Arturo/P2_Arturo";
+import P3_Arturo from "./screens/Arturo/P3_Arturo";
+import Efectos from "./screens/Arturo/Efectos";
 
 // Conexión front-back
 import axios from 'axios';
@@ -214,7 +234,6 @@ const App = () => {
           <Stack.Screen name="Tablas" component={Tablas} />
           <Stack.Screen name="Tablas1" component={Tablas1} />
           <Stack.Screen name="Tablas2" component={Tablas2} />
-          {/*<Stack.Screen name="Proceso" component={Proceso} />*/}
           <Stack.Screen name="MenuNavegacion" component={MenuNavegacion} />
           <Stack.Screen name="DrawerNavigator" component={DrawerNavigator} />
           <Stack.Screen name="BottomTabNavigator" component={BottomTabNavigator} />
@@ -240,7 +259,9 @@ const App = () => {
           <Stack.Screen name="MenuAvatar" component={MenuAvatar} />
           <Stack.Screen name="MenuAppBar" component={MenuAppBar} />
           <Stack.Screen name="NavegacionTablas" component={NavegacionTablas} />
+          <Stack.Screen name="MenuListas" component={MenuListas} />
 
+          {/*PANTALLAS ATAJODISENO PRINCIPAL*/}
           <Stack.Screen name="SimboloCargar" component={SimboloCargar} />
           <Stack.Screen name="Cantidad" component={Cantidad} />
           <Stack.Screen name="MostrarOcultar" component={MostrarOcultar} />      
@@ -251,7 +272,12 @@ const App = () => {
           <Stack.Screen name="LineaSeparatoria" component={LineaSeparatoria} />          
           <Stack.Screen name="Ayudas" component={Ayudas} />
           <Stack.Screen name="IconoDiseno" component={IconoDiseno} />
+          <Stack.Screen name="ClickDcho" component={ClickDcho} />
+          <Stack.Screen name="ClickDcho2" component={ClickDcho2} />
+          <Stack.Screen name="Modales" component={Modales} />
+          <Stack.Screen name="BarraCarga" component={BarraCarga} />
 
+          {/*BARRAS DE NAVEGACIÓN*/}
           <Stack.Screen name="Apbar" component={Apbar} />
           <Stack.Screen name="ApbarAction" component={ApbarAction} />
           <Stack.Screen name="ApbarBack" component={ApbarBack} />
@@ -263,12 +289,21 @@ const App = () => {
           <Stack.Screen name="Deslizar" component={Deslizar} />
           <Stack.Screen name="DeslizarBotones" component={DeslizarBotones} />
 
+          {/*ICONOS*/}
           <Stack.Screen name="Avatar_Icono" component={Avatar_Icono} />
           <Stack.Screen name="Avatar_Imagen" component={Avatar_Imagen} />
           <Stack.Screen name="Avatar_Text" component={Avatar_Text} />
 
+          {/*ALERTAS*/}
           <Stack.Screen name="Dialog_Icon" component={Dialog_Icon} />
           <Stack.Screen name="Dialog_Scroll" component={Dialog_Scroll} />
+
+          {/*LISTAS*/}
+          <Stack.Screen name="ListaAcordeon" component={ListaAcordeon} />
+          <Stack.Screen name="Lista2" component={Lista2} />      
+          <Stack.Screen name="ListaIcono" component={ListaIcono} />
+          <Stack.Screen name="ListaItem" component={ListaItem} />          
+          <Stack.Screen name="ListaSection" component={ListaSection} />
 
           {/*ARTURO*/}
           <Stack.Screen name="TablaPaginacion" component={TablaPaginacion} />
@@ -280,8 +315,12 @@ const App = () => {
           <Stack.Screen name="Efectos" component={Efectos} />                   
           
           
+          
+          
           {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
-          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}          
+          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
+          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
+          {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
           {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
           {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
           {/*<Stack.Screen name="MenuDiseno" component={MenuDiseno} />*/}
